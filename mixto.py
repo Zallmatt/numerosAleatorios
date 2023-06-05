@@ -1,5 +1,10 @@
+# coding=utf-8
 from datetime import datetime
 
+# ejemplo valores a utilizar tratar de no usar 0
+# Valor de a: 1548 usar valor de 4 cifras
+# Valor de c: 4578 usar valor de 4 cifras que no se repita con a
+# Valor de m: 7845 usar un valor de 4 cifras alto
 #Función que recibe por parámtro la semilla, las dos constantes y la cantidad de números aleatorios que deseamos.
 def lehmer(pSemilla, pA, pM, pC, pN):
     sequence = []  # Se crea una lista vacía para almacenar los números generados.
