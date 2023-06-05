@@ -13,17 +13,18 @@ def mixtoCongruencial(pSemilla, pA, pB, pC, pM, pN):
     return sequence  # Se retorna la lista de números pseudoaleatorios generada.
 
 while a>b:
-    a = int(input("Intervalo a: ")) #Se solicita al usuario el minimo valor
-    b = int(input("Intervalo b (mayor que a): ")) #Se solicita al usuario el maximo valor
-c = int(input("Valor de c: "))  # Se solicita al usuario ingresar el valor de c.
-m = int(input("Valor de m: "))  # Se solicita al usuario ingresar el valor de m.
+    a = float(input("Intervalo a: ")) #Se solicita al usuario el minimo valor
+    b = float(input("Intervalo b (mayor que a): ")) #Se solicita al usuario el maximo valor
+c = float(input("Valor de c: "))  # Se solicita al usuario ingresar el valor de c.
+m = float(input("Valor de m: "))  # Se solicita al usuario ingresar el valor de m.
 
 
 n = int(input("Cantidad de numeros pseudoaleatorios: "))
 
 #Se asigna a la semilla el valor transcurrido en segundos desde el 1 de enero de 1970 hasta la actualidad
 #por lo tanto, siempre cambia.
-semilla = datetime.now().timestamp()
+#semilla = datetime.now().timestamp()
+semilla = float(input("Agregar semilla: "))
 
 # Se llama a la función mixtoCongruencial enviando los valores ingresados 
 # por el usuario y la semilla generada a partir de la marca de tiempo.
