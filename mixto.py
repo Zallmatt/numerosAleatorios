@@ -26,3 +26,4 @@ semilla = int(73619)
 generator = lehmer(semilla, a, m, c, n)
 
 print(generator)  # Se imprime en pantalla la lista de números pseudoaleatorios generados.
+ 
