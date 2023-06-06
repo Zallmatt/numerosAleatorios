@@ -25,7 +25,7 @@ generator = mixtoCongruencial(semilla, a, c, n)
 
 print("Valor de la semilla generada: ", semilla)
 print("Tabla de números pseudoaleatorios generados:")
-#print("------------------------------")
+print("------------------------------")
 print("|       Índice      |  Valor  |")
 print("------------------------------")
 for i in range(len(generator)):
