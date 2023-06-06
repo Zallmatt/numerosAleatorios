@@ -36,10 +36,10 @@ def park_miller(semilla, n):
     return sequence
 
 
-#semilla= int(input("Ingrese una semilla: "))
+semilla= int(input("Ingrese una semilla: "))
 #semilla = int(datetime.now().timestamp()) #Toma los segundos que pasaron desde 1970 hasta hoy
 #semilla = int(datetime.now().strftime("%Y%m%d")) #Toma la fecha actual
-semilla = get_mouse_seed()
+#semilla = get_mouse_seed()
 numero2 = int(input("Ingrese la cantidad de numero aleatorios que quiere generar: "))
 print (semilla)
 random_numbers = park_miller(semilla, numero2)
